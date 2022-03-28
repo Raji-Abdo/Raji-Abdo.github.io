@@ -124,7 +124,6 @@ a.aj_btn:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-inline: 300px;
 	overflow: hidden;
 }
 .ra-card {
