@@ -1,0 +1,63 @@
+ul {
+	list-style: url('/fillieres/listStyle.png');
+	font-size: 16px;
+}
+div {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.div_content {
+	background-color: rgb(250, 255, 255);
+	box-shadow: 2px 2px 2px 2px #b1b1b1;
+	margin: 40px;
+}
+.div_content h5 {
+	color: #00227e;
+	/*background-color: #888888;*/
+	width: 100%;
+	border-radius: 8px;
+	padding: 5px;
+}
+.titlecontainer {
+	background-color: #00227e;
+	left: 50%;
+	opacity: .7;
+	width: 100%;
+	height: 100%;
+}
+.titlecontainer2 span {
+	color: rgb(255, 255, 255);
+	opacity: .9;
+	font-size: 20px;
+}
+.titlecontainer0 {
+	width: 100%;
+	height: 50px;
+}
+.titlecontainer2 {
+	color: rgb(39, 187, 162);
+	background-color: #00227e;
+	border-radius: 15px;
+
+	position: absolute;
+	height: min-content;
+}
+.div_content button {
+	color: #00227e;
+	font-size: 22px;
+	/* background-color: #888888;*/
+	width: 100%;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.btn_text span {
+	display: inline;
+	float: right;
+}
+
+.btn_text label {
+	float: left;
+}
+.div_content.collapsing {
+	background-color: black;
+}
