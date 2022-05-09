@@ -24,9 +24,10 @@ rock.addEventListener('click', () => {
     move.style.display = 'none'
     my.style.display = 'block'
     your.style.display = 'block'
+
+    rock.style.cursor = 'auto'
     play = 1
     rps()
-    
     result()
     setTimeout(natija, 1000);
 })
@@ -36,6 +37,8 @@ paper.addEventListener('click', () => {
     scissors.style.display = 'none'
     move.style.display = 'none'
     my.style.display = 'block'
+    paper.style.cursor = 'auto'
+
     your.style.display = 'block'
     play = 2
     rps()
@@ -48,6 +51,8 @@ scissors.addEventListener('click', () => {
     paper.style.display = 'none'
     rock.style.display = 'none'
     move.style.display = 'none'
+    scissors.style.cursor = 'auto'
+
     my.style.display = 'block'
     your.style.display = 'block'
     play = 3
@@ -124,4 +129,8 @@ tryAgain.addEventListener('click', () => {
     scissors.style.display = 'block'
     paper.style.display = 'block'
     move.style.display = 'block'
+    rock.style.cursor = 'pointer'
+    paper.style.cursor = 'pointer'
+    scissors.style.cursor = 'pointer'
+
 })
