@@ -24,8 +24,9 @@ rock.addEventListener('click', () => {
     move.style.display = 'none'
     my.style.display = 'block'
     your.style.display = 'block'
-    rps()
     play = 1
+    rps()
+    
     result()
     setTimeout(natija, 1000);
 })
@@ -36,8 +37,9 @@ paper.addEventListener('click', () => {
     move.style.display = 'none'
     my.style.display = 'block'
     your.style.display = 'block'
-    rps()
     play = 2
+    rps()
+    
     result()
     setTimeout(natija, 1000);
 })
@@ -48,26 +50,27 @@ scissors.addEventListener('click', () => {
     move.style.display = 'none'
     my.style.display = 'block'
     your.style.display = 'block'
-    rps()
     play = 3
+    rps()
+    
     result()
     setTimeout(natija, 1000);
 })
 
 function rps() {
-    var random = Math.floor(Math.random() * 3);
-    if (random == 0) {
+
+    if (play == 3) {
         rock1.style.display = 'block'
         vs.style.display = 'block'
         counter = 1
     }
-    if (random == 1) {
+    if (play == 1) {
         paper1.style.display = 'block'
         vs.style.display = 'block'
         counter = 2
         
     }
-    if (random == 2) {
+    if (play == 2) {
         scissors1.style.display = 'block'
         vs.style.display = 'block'
         counter = 3
