@@ -10,6 +10,10 @@ var your = document.getElementById('your')
 var vs = document.getElementById('vs')
 var res = document.getElementById('res')
 var tryAgain = document.getElementById('try')
+var scoreC = 0
+var scoreP = 0
+var scorec = document.getElementById('scorec')
+var scorep = document.getElementById('scorep')
 var play = 0
 var counter = 0
 var resultat = 0
@@ -89,10 +93,14 @@ function natija() {
     if (resultat == 1){
         res.textContent = 'You Win! 🎉👏'
         setTimeout(try_again, 1000)
+        scoreC += 1
+        scorec.innerText = scoreC
     } 
     if (resultat == 2){
         res.textContent = 'You Lost! 🤣😂'
         setTimeout(try_again, 1000)
+        scoreP += 1
+        scorep.innerText = scoreP
 
     } 
     if (resultat == 3){
@@ -105,11 +113,10 @@ tryAgain.addEventListener('click', () => {
     rock1.style.display = 'none'
     scissors1.style.display = 'none'
     paper1.style.display = 'none'
-    res.textContent = ''
+    res.textContent = 'Score'
     vs.style.display = 'none'
     your.style.display = 'none'
     my.style.display = 'none'
-
     rock.style.display = 'block'
     scissors.style.display = 'block'
     paper.style.display = 'block'
